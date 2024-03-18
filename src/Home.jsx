@@ -7,14 +7,18 @@ function Home() {
                 celcius:10,
                 name:'London'
         })
-        const apiUrl='https://api.openweathermap.org/data/2.5/weather?q=phoenix&appid=8d3037940685618cbe1b387e50ecab9e&&unit=matrics'
+        const [name,setName]=useState('')
+        const apiUrl='https://api.openweathermap.org/data/2.5/weather?q=cairo&appid=8d3037940685618cbe1b387e50ecab9e&&unit=matrics'
                
         async function getData(){
                 try {
                         let res = await axios.get(apiUrl);
                   
-                        setData(res.data);
-                       console.log(res)
+                      //  setData(res.data);
+                     // console.log(res.data)
+                      setData({...data,celcius:res.data.main.temp,name:res.data.name
+                      })
+                       console.log(res.data)
                       } catch (err) {
                         console.error(err);
                       }
