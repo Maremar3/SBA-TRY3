@@ -18,13 +18,14 @@ function Home() {
                       } catch (err) {
                         console.error(err);
                       }
+                }
                         
                       useEffect(()=>{
                         getData();
                 }, []);
 
 
-        }
+        
         
                
              
