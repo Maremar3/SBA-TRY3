@@ -32,7 +32,7 @@ height:100vh;
 background-color:rgb(254, 253, 255)
 }
 .weather{
-  width:90%;
+  width:94%;
   padding:30px;
   border-radius:10px;
   margin:50px auto;
@@ -47,4 +47,42 @@ background:linear-gradient(130deg,rgb(86, 86, 235),rgb(157, 138, 220));
 }
 .search input{
   border: none;
+  outline:0;
+  padding:12px 25px;
+  font-size:18px;
+  color:black;
+  border-radius: 30px;
+  flex:1;
+  margin-right: 12px;
 }
+.search button{
+  border: none;
+  outline:0;
+  width:40px;
+  height:40px;
+ 
+  border-radius: 10px;
+  cursor:pointer;
+  
+
+}
+h3{
+  
+  color: white;
+}
+/* .winfo{
+  margin-top: 20px;
+  width:170px;
+} */
+.winfo h1{
+  font-size: 70px;
+  font-weight: 500;
+  margin-top:5px;
+}
+.winfo h2{
+  font-size: 40px;
+  font-weight: 400;
+  margin-top:40px;
+}
+
+

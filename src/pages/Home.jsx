@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
  import logo from '../images/search.jpg'
+ import cloud from '../images/cloud.png'
 function Home() {
         const [data, setData] = useState({
                 celcius: 10,
@@ -36,20 +37,21 @@ function Home() {
                 getData();
         }, []);
 
-
-
-
         return (
 
                 <div className='container'>
                         <div className='weather'>
                                 <div className='search'>
+                                        {/* <h3>ENTER YOUR CITY THEN PRESS SEARCH BUTTON   </h3> */}
+                                     
                                         <input type="text" placeholder='Enter City Name' onChange={e => setName(e.target.value)} />
                                         <button><img src={logo} onClick={handleClick} width='10' /></button>
                                         {/* <button><img src={logo} alt="BigCo Inc. logo"/></button> */}
                                    
                                 </div>
-                                <div className='winfo'><h1>{data.celcius}°C</h1><h2>{data.name}</h2></div>
+                                <div className='winfo'>
+                                        <img src={cloud} width='80' />
+                                        <h1>{data.celcius}°C</h1><h2>{data.name}</h2></div>
                         </div>
                 </div>
 
