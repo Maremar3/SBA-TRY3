@@ -10,11 +10,11 @@ function Home() {
         useEffect(()=>{
                 const apiUrl='https://api.openweathermap.org/data/2.5/weather?q=phoenix&appid=8d3037940685618cbe1b387e50ecab9e&&unit=matrics'
                 axios.get('apiUrl')
-                // .then(res =>console.log(res.data))
-                .then(res => {
-                        setData({...data,celcius:res.main.temp,name:res.data.name
-                        })
-                })
+                 .then(res =>console.log(res))
+                // .then(res => {
+                //         setData({...data,celcius:res.data.main.temp,name:res.data.name
+                //         })
+                // })
                 .catch(err => console.log(err))
         },[])
    return (
