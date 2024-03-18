@@ -2,6 +2,8 @@
 import React from 'react'
 import Home from './Home'
 
+import { Route, Routes } from 'react-router-dom';
+
 //import './App.css'
 
 function App() {
@@ -9,7 +11,14 @@ function App() {
 
   return (
     <>
-       <Home />
+       {/* <Home /> */}
+
+       {/* <NavBar /> */}
+      <Routes>
+      
+        <Route path='/' element={<Home />} />
+     
+      </Routes>
        
     </>
   )
