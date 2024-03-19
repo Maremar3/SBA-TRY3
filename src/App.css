@@ -1,5 +1,6 @@
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
+  max-width: 400px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -14,10 +15,12 @@ li {
 .nav {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(68, 95, 185);
-  color: rgb(83, 43, 202);
-  padding: 15px;
+  background-color: rgb(113, 83, 222);
+  color: rgb(134, 99, 236);
+  padding: 18px;
+  width:99%;
   font-size: 2em;
+  border-radius:10px;
 }
 
 .nav a {
@@ -44,6 +47,7 @@ background:linear-gradient(130deg,rgb(86, 86, 235),rgb(157, 138, 220));
   display:flex;
   align-items:center;
   justify-content: space-between;
+  flex-direction: column;
 }
 .search input{
   border: none;
@@ -66,9 +70,10 @@ background:linear-gradient(130deg,rgb(86, 86, 235),rgb(157, 138, 220));
   
 
 }
-h3{
+h5{
   
-  color: white;
+  color: rgb(250, 246, 246);
+
 }
 /* .winfo{
   margin-top: 20px;
@@ -84,5 +89,24 @@ h3{
   font-weight: 400;
   margin-top:40px;
 }
+/* .details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  margin-top:50px;
 
+}
+.details .col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+
+}
+
+.details .col img{
+  width:40px;
+  margin-right:10px;
+
+} */
 
