@@ -4,7 +4,7 @@ function NavBar() {
   return (
     <div className='nav'>
       <Link to='/'>
-        <div>Temrture</div>
+        <div>Temperature</div>
       </Link>
       <Link to='/Humidity'>
         <div>Humidity</div>
